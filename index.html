@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://kit.fontawesome.com/b7655a4376.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="theme">
+    <div class="login">
+        <center>
+            <h1>Sign in Form</h1>
+        </center>
+        <form action="">
+            <label for="email">First name</label>
+            <input type="email" name="email" id="email" placeholder="Your Email..." required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <p onclick="createOne()" style="margin: 8px 0;padding:12px 2px" class="para">Don't have an account?</p>
+            <input type="submit" value="submit">
+        </form>
+        <center>
+            <p style="color: gray;">ــــــــــــــــــــــــــــــــ <span style="color: black;">or</span> ـــــــــــــــــــــــــــــــــ</p>
+        </center>
+        <input type="button" value="Sign in with facebook"> <input type="button" value="Sign in with Google">
+    </div>
+    <div class="Signup">
+        <center>
+            <h1>Sign up Form</h1>
+        </center>
+        <form action="">
+            <label for="fname">First name</label>
+            <input type="text" name="fname" id="fname">
+            <label for="lname">Last name</label>
+            <input type="text" name="lname" id="lname">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="ConfirmPassword" id="ConfirmPassword"> Select your gender: <br>
+            <input type="radio" name="gender" id="male"> Male <br>
+            <input type="radio" name="gender" id="female">Female <br>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Iran">Iran</option>
+                <option value="Tajikistan">Tajikistan</option>
+            </select>
+            <input type="button" value="Register" class="register">
+        </form>
+        <center>
+            <p style="color: gray;">ـــــــــــــــــــــــــــــــــــــــ <span style="color: black;">or</span> ــــــــــــــــــــــــــــــــــــــ</p>
+        </center>
+        <input type="button" value="Sign up with Facebook">
+        <input type="button" value="Sign up with Google">
+        <input type="button" value="Sign up with Twitter">
+    </div>
+    <script>
+        function createOne() {
+            document.querySelector('.Signup').classList.toggle('create');
+        }
+    </script>
+</body>
+
+</html>
